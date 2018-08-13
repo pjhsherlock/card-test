@@ -1,0 +1,26 @@
+.c-masthead {
+	height: calc(100vh - 100px);
+	position: relative;
+}
+
+.c-masthead__container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.c-masthead__description {
+	text-align: center;
+	font-size: 15px;
+	opacity: 0.8;
+}
+
+.c-masthead__image {
+	display: block;
+	margin: 0 auto;
+/*	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+}

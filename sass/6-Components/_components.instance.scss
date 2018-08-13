@@ -1,0 +1,300 @@
+.c-instance-list {
+	max-width: 800px;
+	margin: 0 auto;
+
+	margin-top: 24px;
+	@media screen and (min-width: 500px) {
+		padding: 0 5px;
+	}
+}
+.c-instance {
+	  animation: .3s ease-in-out both fade-in;
+}
+
+.c-instance-list__1, .c-instance-list__2 {
+	.c-instance {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: left;
+
+		border: 1px solid rgba(0, 0, 0, 0.05);
+		box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 0px;
+
+		margin: 2% 0;
+
+		p, h4 {
+			margin-bottom: 0;
+		}
+	}
+
+	.c-instance__wrap {
+		margin: 0 auto;
+		height: auto;
+
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		flex: 1;
+	}
+
+	.c-instance__details {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		flex: 1;
+		margin-left: 15px;
+		.c-instance__title {}
+		.c-instance__datetime {
+			opacity: 0.5;
+		}
+	}
+
+	.c-instance__meta {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		margin-left: 15px;
+		.c-instance__venue {}
+		.c-instance__price {
+			opacity: 0.5;
+		}
+	}
+
+	.c-instance__cta {
+		font-size: 90%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		margin: 0 15px;
+		button {
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.c-instance__img {
+		position: relative;
+	/*	background: url(https://source.unsplash.com/random/320x200);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;*/
+		img {
+			height: 100%;
+			width: 100%;
+			max-width: 120px;
+			min-height: 50px;
+			min-width: 80px;
+		}
+	}
+
+}
+
+.c-instance-list__3 {
+	.c-instance {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: left;
+
+		border: 1px solid rgba(0, 0, 0, 0.05);
+		box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 0px;
+		@media screen and (min-width: 500px) {
+			margin: 2% 0;
+		}
+
+		p, h4 {
+			margin-bottom: 0;
+		}
+		@media screen and (min-width: 500px) {
+			&:hover {
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px 0px;
+				.c-instance__cta {
+					visibility: visible;
+					opacity: 1;
+					order: 3;
+					transition: opacity 600ms, visibility 600ms;
+					animation-delay: 10ms;
+				}
+				.c-instance__price {
+					visibility: collapse;
+					opacity: 0;
+					order: 2;
+				}
+				.c-instance__btn-price {
+					visibility: visible;
+					opacity: 1;
+
+					transition: opacity 1.5s, visibility 600ms;
+					transition-delay: 100ms;
+				}
+				.c-instance__share {
+					display: hidden;
+					@media screen and (min-width: 500px) {			
+						visibility: visible;
+						opacity: 0.5;
+						font-size: 80%;
+						transition: opacity 1.5s, visibility 600ms;
+						transition-delay: 100ms;
+						span {
+							opacity: 1;
+							visibility: visible;
+						}
+						i {
+							margin-left: 10px;
+							&:hover {
+								color: #ef027d;
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.c-instance__wrap {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		flex: 1;
+		padding: 5px 15px;
+		@media screen and (min-width: 500px) {
+			padding: 10px 15px;
+		}
+	}
+
+	.c-instance__details {
+		font-size: 80%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex: 1;
+		@media screen and (min-width: 500px) {
+			font-size: 100%;
+		}
+		.c-instance__datetime {
+			opacity: 0.5;
+		}
+	}
+	.c-instance__title {
+		font-size: 100%;
+		@media screen and (min-width: 500px) {
+			font-size: 125%;
+		}
+	}
+
+	.c-instance__meta {
+		font-size: 80%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		margin-top: 10px;
+		@media screen and (min-width: 500px) {
+			margin-top: 15px;
+			font-size: 100%;
+		}
+		.c-instance__venue {}
+		.c-instance__price {
+			position: relative;
+			font-size: 0;
+			opacity: 0.5;
+			order: 3;
+			@media screen and (min-width: 500px) {
+				font-size: 100%;
+			}
+		}
+	}
+
+	.c-instance__cta {
+		visibility: visible;
+		opacity: 1;
+		order: 3;
+		position: relative;
+		@media screen and (min-width: 500px) {
+			font-size: 90%;
+
+			display: flex;
+			justify-content: flex-end;
+			justify-content: center;
+
+			visibility: collapse;
+			opacity: 0;
+			order: 2;
+		}
+
+			.c-instance__btn-price {
+				opacity: 1;
+				order: 2;
+				display: inline-block;
+				position: absolute;
+				top: -12px;
+				font-size: 75%;
+				justify-content: center;
+				align-content: center;
+			    width: 100%;
+			    text-align: center;
+				@media screen and (min-width: 500px) {
+					opacity: 0;
+					top: -20px;
+				}
+			}
+
+		button {
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.c-instance__share {
+		opacity: 0.25;
+		i {
+			margin-left: 10px;
+		}
+		span {
+			opacity: 0;
+			visibility: hidden;
+		}
+		@media screen and (min-width: 500px) {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	.c-instance__img {
+		position: relative;
+		img {
+			display: none;
+			@media screen and (min-width: 500px) {
+				display: inline-block;
+				height: 100%;
+				width: 100%;
+				max-width: 120px;
+				min-height: 50px;
+				min-width: 80px;
+			}
+		}
+	}
+	.c-instance-ex {
+		position: absolute;
+		font-size: 75%;
+		width: 100%;
+		line-height: 1;
+		text-align: center;
+		top: -15px;
+		color: red;
+		i {
+			margin-right: 5px;
+		    font-size: 80%;
+		}
+	}
+}

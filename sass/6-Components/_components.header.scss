@@ -1,0 +1,15 @@
+.c-header {
+	nav {
+		max-width: 800px;
+		margin: 0 auto;
+		ul {
+			font-family: 'Abril Fatface', cursive;
+			margin: 24px 0;
+			display: flex;
+			justify-content: space-between;
+			li {
+				list-style-type: none;	
+			}
+		}
+	}
+}

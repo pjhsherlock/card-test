@@ -1,0 +1,38 @@
+///* ========================================================================
+//   #COLOURS
+//   ======================================================================== */
+// The list of colour variables used globally across the project
+
+
+//
+// Project Colours as variables
+//
+$primary: #D95B43;
+$secondary: #EBD077;
+$tertiary: #54777B;
+$highlight: #542537;
+
+//
+// Project Colour as Array
+//
+$colors: (
+    primary: #D95B43,
+	secondary: #EBD077,
+	tertiary: #54777B,
+	highlight: #542537
+);
+
+//
+// Colour Helper Function
+//
+@function color($key) { // use e.g. color(navy) to refer to color hex values
+    @return map-get($colors, $key);
+}
+
+//
+// White/Black
+//
+$white: #ffffff;
+$black: #000000;
+$off-white: #F3F2ED;
+$off-black: #404040;
